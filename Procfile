@@ -1,1 +1,1 @@
-web: gunicorn vipearthquake.wsgi
+web: gunicorn mysite.wsgi
