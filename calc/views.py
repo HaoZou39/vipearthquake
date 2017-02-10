@@ -10,15 +10,15 @@ def calc(request):
 	def add(x,y):
 	#	x = driver.find_element_by_name("box1")
 	#	y = driver.find_element_by_name("box2")
-		ctypes.windll.user32.MessageBoxW(None,"x+y = "+str(x+y), "Answer", 0)
+		ctypes.windll.user32.MessageBoxA(0,"x+y = "+str(x+y), "Answer", 0)
 	def mul(x,y):
 	#	x = driver.find_element_by_name("box1")
 	#	y = driver.find_element_by_name("box2")
-		ctypes.windll.user32.MessageBoxW(None, "x*y = "+str(x*y), "Answer", 0)	
+		ctypes.windll.user32.MessageBoxA(0, "x*y = "+str(x*y), "Answer", 0)	
 	def sub(x,y):
 	#	x = driver.find_element_by_name("box1")
 	#	y = driver.find_element_by_name("box2")
-		ctypes.windll.user32.MessageBoxW(None, "x-y = "+str(x-y), "Answer", 0)
+		ctypes.windll.user32.MessageBoxA(0, "x-y = "+str(x-y), "Answer", 0)
 	if(request.GET.get('add')):
 		x = float(request.GET.get("box1"))
 		y = float(request.GET.get("box2"))
